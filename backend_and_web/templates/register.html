@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Regisztráció</h1>
+<form method="POST" action="{{ url_for('register') }}">
+    <label for="username">Felhasználónév:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="password">Jelszó:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <button type="submit">Regisztráció</button>
+</form>
+{% endblock %}
